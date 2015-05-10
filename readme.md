@@ -1,0 +1,36 @@
+
+# wp-gate8
+
+* In `composer.json` replace `ACFPROKEY` with your [ACF Pro](http://www.advancedcustomfields.com/my-account/) licence key.
+* If you want to change the database prefix do so in `config/wp-application.php`.
+* Run `composer install`.
+
+You'll end up with WordPress installed in `public/wp` and your working files in `public/app` along with Advanced Custom Fields Pro and Custom Post Type Class installed.
+
+## wp-config
+
+The wp-config settings have been split into files to set your options and different database connections depending on your environment. These can be found in the `config` folder.
+
+A `config/wp-salts.php` file is generated during `composer install`.
+
+In _nginx_ set `fastcgi_param ENV production;` in the vhost file.
+
+In _Apache_ set `SetEnv ENV "production"` in your `.htaccess` file, preferably below the web root.
+
+### WordPress could not establish a secure connection to WordPress.org
+
+If you get this error in your development environment then `vagrant ssh`, `sudo vi /etc/hosts` and add
+
+```
+66.155.40.249 wordpress.org api.wordpress.org
+66.155.40.250 wordpress.org api.wordpress.org
+66.155.40.203 wordpress.org api.wordpress.org
+```
+
+### Thanks
+
+* This has been heavily influenced by [Roots](https://roots.io/bedrock/) ([github](https://github.com/roots/bedrock)).
+* [johnpbloch](https://github.com/johnpbloch) for making [WordPress a Composer package](https://packagist.org/packages/johnpbloch/wordpress)
+* [Composer Installers](https://github.com/composer/installers)
+* [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro/)
+* [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class)

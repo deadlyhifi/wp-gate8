@@ -1,0 +1,63 @@
+{
+  "name": "deadlyhifi/wp-gate8",
+  "type": "project",
+  "license": "MIT",
+  "description": "A WordPress starting point",
+  "homepage": "https://github.com/deadlyhifi/wp-gate8/",
+  "authors": [
+    {
+      "name": "Tom de Bruin",
+      "email": "tom@deadlyhifi.com",
+      "homepage": "https://github.com/deadlyhifi"
+    }
+  ],
+  "keywords": [
+    "wordpress", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/deadlyhifi/wp-gate8/issues"
+  },
+  "autoload": {
+    "psr-0": {"Setup\\Salty": "scripts"}
+  },
+  "scripts": {
+    "post-install-cmd": ["Setup\\Salty::run"]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jjgrainger/wp-custom-post-type-class"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.2.3",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+            "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=ACFPROKEY"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.2.*",
+    "composer/installers": "v1.0.21",
+    "jjgrainger/wp-custom-post-type-class": "v1.3.1",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.2.*"
+  },
+  "extra": {
+    "installer-paths": {
+      "public/app/mu-plugins/": ["type:wordpress-muplugin"],
+      "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "public/wp"
+  }
+}
