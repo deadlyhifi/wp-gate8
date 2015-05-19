@@ -3,7 +3,7 @@
 
 * In `composer.json` replace `ACFPROKEY` with your [ACF Pro](http://www.advancedcustomfields.com/my-account/) licence key.
 * If you want to change the database prefix do so in `config/wp-application.php`.
-* Run `composer install`.
+* Run `composer install`. (If you don't have Composer installed yet, follow [these instructions](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable).
 
 You'll end up with WordPress installed in `public/wp` and your working files in `public/app` along with Advanced Custom Fields Pro and Custom Post Type Class installed.
 
