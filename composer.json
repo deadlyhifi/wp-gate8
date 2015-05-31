@@ -50,7 +50,7 @@
     "johnpbloch/wordpress": "4.2.*",
     "composer/installers": "v1.0.21",
     "jjgrainger/wp-custom-post-type-class": "v1.3.1",
-    "advanced-custom-fields/advanced-custom-fields-pro": "5.2.5"
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.2.*"
   },
   "extra": {
     "installer-paths": {
