@@ -28,5 +28,8 @@ vendor
 public/wp
 public/app/uploads
 public/app/mu-plugins/
-public/app/plugins/
+
+!public/app/plugins/
+public/app/plugins/*
+
 # !public/app/plugins/CUSTOM-PLUGIN
