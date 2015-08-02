@@ -16,7 +16,7 @@ Icon
 # Vagrant
 .vagrant
 
-error-log
+error_log
 
 # Composer stuff
 vendor
