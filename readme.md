@@ -27,7 +27,19 @@ If you get this error in your development environment then `vagrant ssh`, `sudo 
 66.155.40.203 wordpress.org api.wordpress.org
 ```
 
-### Thanks
+## Plugins That I Like
+
+Stick them in your `composer.json` and reap.
+
+* ["wpackagist-plugin/wpremote": "2.*"](http://wpackagist.org/search?q=wpremote)
+* ["wpackagist-plugin/jetpack": "3.*"](http://wpackagist.org/search?q=jetpack)
+
+```
+"wpackagist-plugin/wpremote": "2.*",
+"wpackagist-plugin/jetpack": "3.*"
+```
+
+## Thanks
 
 * This has been heavily influenced by [Roots](https://roots.io/bedrock/) ([github](https://github.com/roots/bedrock)).
 * [johnpbloch](https://github.com/johnpbloch) for making [WordPress a Composer package](https://packagist.org/packages/johnpbloch/wordpress)
