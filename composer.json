@@ -45,6 +45,10 @@
       }
     }
   ],
+  "require-dev": {
+    "wpackagist-plugin/debug-bar": "*",
+    "wpackagist-plugin/log-deprecated-notices": "*"
+  },
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.2.*",
