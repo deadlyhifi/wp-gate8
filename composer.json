@@ -47,7 +47,8 @@
   ],
   "require-dev": {
     "wpackagist-plugin/debug-bar": "*",
-    "wpackagist-plugin/log-deprecated-notices": "*"
+    "wpackagist-plugin/log-deprecated-notices": "*",
+    "wpackagist-plugin/query-monitor": "*"
   },
   "require": {
     "php": ">=5.4",
