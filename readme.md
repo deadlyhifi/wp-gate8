@@ -31,9 +31,9 @@ If you get this error in your development environment then `vagrant ssh`, `sudo 
 
 Stick them in your `composer.json` and reap.
 
-* [WP Remote](http://wpackagist.org/search?q=wpremote)
-* [Jetpack](http://wpackagist.org/search?q=jetpack)
-* [Ninja Forms](http://wpackagist.org/search?q=ninja-forms)
+* [WP Remote](https://wpremote.com/) – [wpackagist](http://wpackagist.org/search?q=wpremote)
+* [Jetpack](http://jetpack.me/) – [wpackagist](http://wpackagist.org/search?q=jetpack)
+* [Ninja Forms](https://ninjaforms.com/) – [wpackagist](http://wpackagist.org/search?q=ninja-forms)
 
 ```
 "wpackagist-plugin/wpremote": "2.*",
