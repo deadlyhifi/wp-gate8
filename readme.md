@@ -31,12 +31,14 @@ If you get this error in your development environment then `vagrant ssh`, `sudo 
 
 Stick them in your `composer.json` and reap.
 
-* ["wpackagist-plugin/wpremote": "2.*"](http://wpackagist.org/search?q=wpremote)
-* ["wpackagist-plugin/jetpack": "3.*"](http://wpackagist.org/search?q=jetpack)
+* [WP Remote](http://wpackagist.org/search?q=wpremote)
+* [Jetpack](http://wpackagist.org/search?q=jetpack)
+* [Ninja Forms](http://wpackagist.org/search?q=ninja-forms)
 
 ```
 "wpackagist-plugin/wpremote": "2.*",
-"wpackagist-plugin/jetpack": "3.*"
+"wpackagist-plugin/jetpack": "3.*",
+"wpackagist-plugin/ninja-forms": "2.*"
 ```
 
 ## Thanks
