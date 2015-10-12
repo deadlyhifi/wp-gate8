@@ -8,5 +8,6 @@ define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/app');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/app');
 
 //https://codex.wordpress.org/Editing_wp-config.php#Disable_Plugin_and_Theme_Update_and_Installation
-define('DISALLOW_FILE_MODS', true);
+//define('DISALLOW_FILE_MODS', true);
+define('DISALLOW_FILE_EDIT', true);
 define('WP_DEBUG', false);
