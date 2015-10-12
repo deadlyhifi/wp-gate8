@@ -54,7 +54,7 @@
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.3.*",
     "composer/installers": "v1.0.21",
-    "jjgrainger/wp-custom-post-type-class": "v1.3.3",
+    "jjgrainger/wp-custom-post-type-class": "v1.4",
     "advanced-custom-fields/advanced-custom-fields-pro": "*"
   },
   "extra": {
