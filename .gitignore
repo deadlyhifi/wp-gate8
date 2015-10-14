@@ -18,16 +18,18 @@ Icon
 
 error_log
 
+# Preprocessor stuff
+.sass-cache
+bower_components
+node_modules
+
 # Composer stuff
 vendor
-
-# Codekit
-.sass-cache
 
 # WP
 public/wp
 public/app/uploads
-public/app/mu-plugins/
+public/app/mu-plugins
 
 !public/app/plugins/
 public/app/plugins/*
