@@ -31,6 +31,8 @@ If you get this error in your development environment then `vagrant ssh`, `sudo 
 
 Stick them in your `composer.json` and reap.
 
+### Wpackagist
+
 * [WP Remote](https://wpremote.com/) – [wpackagist](http://wpackagist.org/search?q=wpremote)
 * [Jetpack](http://jetpack.me/) – [wpackagist](http://wpackagist.org/search?q=jetpack)
 * [Ninja Forms](https://ninjaforms.com/) – [wpackagist](http://wpackagist.org/search?q=ninja-forms)
@@ -40,6 +42,12 @@ Stick them in your `composer.json` and reap.
 "wpackagist-plugin/jetpack": "3.*",
 "wpackagist-plugin/ninja-forms": "2.*"
 ```
+
+### Custom Repositories
+
+* [WP Pseudo Admin](https://github.com/deadlyhifi/wp-pseudo-admin)
+* [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro/) (included by default)
+* [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class) (included by default)
 
 ## Thanks
 
