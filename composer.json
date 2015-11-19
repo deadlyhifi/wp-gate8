@@ -53,8 +53,8 @@
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.3.*",
-    "composer/installers": "v1.0.22",
-    "jjgrainger/wp-custom-post-type-class": "v1.4",
+    "composer/installers": "~1.0",
+    "jjgrainger/wp-custom-post-type-class": "~1.4",
     "advanced-custom-fields/advanced-custom-fields-pro": "*"
   },
   "extra": {
