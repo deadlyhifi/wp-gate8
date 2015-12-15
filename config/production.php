@@ -5,7 +5,7 @@ define('DB_PASSWORD', 'password_here');
 define('DB_HOST', 'localhost');
 
 if ( defined('WP_CLI') && WP_CLI ) {
-    define('WP_HOME', 'http://DEV-URL.com/');
+    define('WP_HOME', 'http://PRODUCTION-URL.com/');
 }
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/app');
 define('WP_CONTENT_URL', WP_HOME . '/app');
