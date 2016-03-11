@@ -13,7 +13,7 @@ $table_prefix  = 'wp_';
 
 /** autosave post revisions **/
 //define('AUTOSAVE_INTERVAL', 180); // 3 minutes.
-//define('WP_POST_REVISIONS', false);
+//define('WP_POST_REVISIONS', 3);
 
 define('WPLANG', 'en_GB');
 
