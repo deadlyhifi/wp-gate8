@@ -52,7 +52,7 @@
   },
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress": "4.5.*",
+    "johnpbloch/wordpress": "4.4.*",
     "composer/installers": "~1.0",
     "jjgrainger/wp-custom-post-type-class": "~1.4",
     "advanced-custom-fields/advanced-custom-fields-pro": "*"
