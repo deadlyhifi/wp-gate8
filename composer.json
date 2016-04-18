@@ -21,7 +21,7 @@
     "psr-0": {"Setup\\Salty": "scripts"}
   },
   "scripts": {
-    "post-install-cmd": ["Setup\\Salty::run"]
+    "post-update-cmd": ["Setup\\Salty::run"]
   },
   "repositories": [
     {
@@ -31,31 +31,21 @@
     {
       "type": "vcs",
       "url": "https://github.com/jjgrainger/wp-custom-post-type-class"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.7",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-            "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=ACFPROKEY"
-        }
-      }
     }
   ],
   "require-dev": {
     "wpackagist-plugin/debug-bar": "*",
-    "wpackagist-plugin/log-deprecated-notices": "*",
     "wpackagist-plugin/query-monitor": "*"
   },
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress": "4.4.*",
-    "composer/installers": "~1.0",
-    "jjgrainger/wp-custom-post-type-class": "~1.4",
-    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+    "johnpbloch/wordpress": "^4.0",
+    "composer/installers": "^1.0",
+    "vlucas/phpdotenv": "^2.2",
+    "jjgrainger/wp-custom-post-type-class": "^1.4",
+    "roots/wp-password-bcrypt": "^1.0",
+    "wpackagist-theme/twentyfifteen": "^1.0",
+    "wpackagist-plugin/jetpack": "^3.0"
   },
   "extra": {
     "installer-paths": {

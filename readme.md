@@ -1,23 +1,19 @@
 
 # wp-gate8
 
-* In `composer.json` replace `ACFPROKEY` with your [ACF Pro](http://www.advancedcustomfields.com/my-account/) licence key.
-* If you want to change the database prefix do so in `config/wp-application.php`.
+* Duplicate `.env.example` and rename to `.env`
+* Add the required and optional parameters in `.env`
 * Run `composer install`. (If you don't have Composer installed yet, follow [these instructions](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable).
 
-You'll end up with WordPress installed in `public/wp` and your working files in `public/app` along with Advanced Custom Fields Pro and Custom Post Type Class installed.
+You'll end up with WordPress installed in `public/wp` and your working files in `public/app` along with various plugins  installed.
 
-## wp-config
+## Included Resources
 
-The wp-config settings have been split into files to set your options and different database connections depending on your environment. These can be found in the `config` folder.
+* [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class)
+* [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt)
+* [jetpack](https://jetpack.com/)
 
-A `config/wp-salts.php` file is generated during `composer install`.
-
-In _nginx_ set `fastcgi_param ENV production;` in the vhost file.
-
-In _Apache_ set `SetEnv ENV "production"` in your `.htaccess` file, preferably below the web root.
-
-### WordPress could not establish a secure connection to WordPress.org
+## WordPress could not establish a secure connection to WordPress.org
 
 If you get this error in your development environment then `vagrant ssh`, `sudo vi /etc/hosts` and add
 
@@ -27,32 +23,29 @@ If you get this error in your development environment then `vagrant ssh`, `sudo 
 66.155.40.203 wordpress.org api.wordpress.org
 ```
 
-## Plugins That I Like
+## ACF Pro
 
-Stick them in your `composer.json` and reap.
-
-### Wpackagist
-
-* [WP Remote](https://wpremote.com/) – [wpackagist](http://wpackagist.org/search?q=wpremote)
-* [Jetpack](http://jetpack.me/) – [wpackagist](http://wpackagist.org/search?q=jetpack)
-* [Ninja Forms](https://ninjaforms.com/) – [wpackagist](http://wpackagist.org/search?q=ninja-forms)
+If you want to use [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro/), add the following to your `composer.json` file. Being sure to replace `ACFPROKEY` with your key, and update the version number to the latest.
 
 ```
-"wpackagist-plugin/wpremote": "2.*",
-"wpackagist-plugin/jetpack": "3.*",
-"wpackagist-plugin/ninja-forms": "2.*"
+{
+    "type": "package",
+    "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.3.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+            "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=ACFPROKEY"
+        }
+    }
+},
+"require": {
+    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+}
 ```
-
-### Custom Repositories
-
-* [WP Pseudo Admin](https://github.com/deadlyhifi/wp-pseudo-admin)
-* [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro/) (included by default)
-* [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class) (included by default)
 
 ## Thanks
 
 * This has been heavily influenced by [Roots](https://roots.io/bedrock/) ([github](https://github.com/roots/bedrock)).
 * [johnpbloch](https://github.com/johnpbloch) for making [WordPress a Composer package](https://packagist.org/packages/johnpbloch/wordpress)
-* [Composer Installers](https://github.com/composer/installers)
-* [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro/)
-* [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class)
