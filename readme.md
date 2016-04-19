@@ -2,7 +2,7 @@
 
 * Duplicate `.env.example` and rename to `.env`
 * Add the required and optional parameters in `.env`
-* Run `composer install`. (If you don't have Composer installed yet, follow [these instructions](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable).
+* Run `composer install`. (If you don't have Composer installed yet, follow [these instructions](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)).
 
 You'll end up with WordPress installed in `public/wp` and your working files in `public/app` along with various plugins  installed.
 
