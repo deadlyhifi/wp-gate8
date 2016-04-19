@@ -17,12 +17,6 @@
   "support": {
     "issues": "https://github.com/deadlyhifi/wp-gate8/issues"
   },
-  "autoload": {
-    "psr-0": {"Setup\\Salty": "scripts"}
-  },
-  "scripts": {
-    "post-update-cmd": ["Setup\\Salty::run"]
-  },
   "repositories": [
     {
       "type": "composer",
