@@ -1,4 +1,3 @@
-
 # wp-gate8
 
 * Duplicate `.env.example` and rename to `.env`
@@ -49,3 +48,4 @@ If you want to use [Advanced Custom Fields Pro](http://www.advancedcustomfields.
 
 * This has been heavily influenced by [Roots](https://roots.io/bedrock/) ([github](https://github.com/roots/bedrock)).
 * [johnpbloch](https://github.com/johnpbloch) for making [WordPress a Composer package](https://packagist.org/packages/johnpbloch/wordpress)
+* Seriously in all seriousness, I'm far more into [WordPlate](https://wordplate.github.io/) which is like this but far nicer - [github.com/wordplate/wordplate](https://github.com/wordplate/wordplate).
