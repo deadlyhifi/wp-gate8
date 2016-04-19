@@ -12,7 +12,7 @@
     }
   ],
   "keywords": [
-    "wordpress", "composer", "vagrant", "wp"
+    "wordpress", "composer"
   ],
   "support": {
     "issues": "https://github.com/deadlyhifi/wp-gate8/issues"
